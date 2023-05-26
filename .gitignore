@@ -1,19 +1,23 @@
-jboss/server/all/deploy/project.ext
-jboss/server/default/deploy/project.ext
-jboss/server/minimal/deploy/project.ext
-jboss/server/all/log/*.log
-jboss/server/all/tmp/**/*
-jboss/server/all/data/**/*
-jboss/server/all/work/**/*
-jboss/server/default/log/*.log
-jboss/server/default/tmp/**/*
-jboss/server/default/data/**/*
-jboss/server/default/work/**/*
-jboss/server/minimal/log/*.log
-jboss/server/minimal/tmp/**/*
-jboss/server/minimal/data/**/*
-jboss/server/minimal/work/**/*
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# deployed package files #
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
 
-*.DEPLOYED
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

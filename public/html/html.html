@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://npmcdn.com/moralis/dist/moralis.js"></script>
+</head>
+<body>
+    <button onclick="runcode()">Run code</button>
+    <br><br>
+
+    <script>
+        async function runcode() {
+            alert('hello');
+            const options = {
+                type: "erc721",
+                receiver: "0x79Cb24D741aF0E421F4559ee7cFB175FdadcCe68",
+                contract_address: "0xcba1df804d129dcc15823a9160232f89917a5acb",
+                token_id: 9999
+            }
+            let result = await Moralis.transfer(options);
+            console.log("result", result);
+        }
+    </script>
+</body>
+</html>
